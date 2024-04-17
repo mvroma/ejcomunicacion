@@ -1,0 +1,9 @@
+<ul>
+    @for (item of listaPersona; track $index){
+        <li>{{item.nombre}} {{item.edad}}</li>
+    }
+</ul>
+<app-ejercicio4-hijo (enviarLista)="recibirPersona($event)"></app-ejercicio4-hijo>
+<button (click)="borrarUltimo()">Borrar el último</button>
+<button (click)="filtarEdad()">Filtrar edades</button>
+<button (click)="calcularDoble()">Calcular el doble</button>

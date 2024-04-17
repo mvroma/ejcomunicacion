@@ -1,0 +1,7 @@
+<label>Asignaturas</label><br>
+<select [(ngModel)]="opcion">
+@for (item of opciones; track $index){
+    <option value = "{{item}}">{{item}}</option>
+}
+</select>
+<button (click)="enviarPadre(opcion)">Mandar información</button>
